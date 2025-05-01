@@ -11,7 +11,8 @@ const corsOptions = {
     Credentials: true, 
 };
 
-app.use(cors(corsOptions));
+app.use(cors()); // semua domain diizinkan (tidak aman untuk production)
+
 
 app.get('/cobaCORS', (req, res) => {
     res.send('CORS configuration is working!');
