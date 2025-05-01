@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://cs9-maharakafadhilah-backend.vercel.app/';
+const API_URL = 'https://cs9-maharakafadhilah-backend.vercel.app';
 
 const api = axios.create({
   baseURL: API_URL,
