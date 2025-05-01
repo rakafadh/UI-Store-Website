@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 const corsOptions = {
-    origin: 'http://localhost:5173', // Hanya menerima request dari domain ini
+    origin: 'https://cs9-maharakafadhilah-frontend.vercel.app/', // Hanya menerima request dari domain ini
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Hanya mengizinkan method tertentu
 };
 
