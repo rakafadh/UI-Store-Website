@@ -4,9 +4,7 @@ const API_URL = 'https://cs9-maharakafadhilah-backend.vercel.app';
 
 const api = axios.create({
   baseURL: API_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  withCredentials: true, // Mengizinkan pengiriman cookie dan header otorisasi
 });
 
 // Auth Services
