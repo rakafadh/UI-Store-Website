@@ -8,11 +8,10 @@ app.use(express.json());
 const corsOptions = {
     origin: 'https://cs9-maharakafadhilah-frontend.vercel.app/', // Hanya menerima request dari domain ini
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Hanya mengizinkan method tertentu
-    Credentials: true, 
+    Credentials: true, // Mengizinkan pengiriman cookie dan header otorisasi
 };
 
-app.use(cors()); // semua domain diizinkan (tidak aman untuk production)
-
+app.use(cors(corsOptions));
 
 app.get('/cobaCORS', (req, res) => {
     res.send('CORS configuration is working!');
